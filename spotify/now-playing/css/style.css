@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img[src*="https://cloud.githubusercontent.com/assets/23024110/20663010/9968df22-b55e-11e6-941d-edbc894c2b78.png"] {
+    display: none;}
+
+html, body {
+  height: 100%;
+}
+body {
+  background-color: #111;
+  color: #eee;
+  font-family: 'Montserrat';
+  font-size: 3vmin;
+}
+
+.hidden {
+  display: none;
+}
+
+/** Buttons **/
+.btn {
+  background-color: transparent;
+  border-radius: 2em;
+  border: 0.2em solid rgba(29, 185, 84, 1.0);
+  background: rgba(29, 185, 84, 1.0);
+  color: rgba(255, 255, 255, 1.0);
+  cursor: pointer;
+  font-size: 3vmin;
+  padding: 0.7em 1.5em;
+  transition: all 0.25s ease;
+  font-family: 'Montserrat';
+}
+
+.btn:hover {
+  background: rgba(29, 185, 84, 1.0);
+  color: #ffffff;
+  border-radius: 2em;
+  font-size: 3.5vmin;
+}
+
+.btn--login {
+  margin: 0 auto;
+}
+
+/** Now Playing **/
+.now-playing__name {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+}
+
+.now-playing__artist {
+  margin-bottom: 1em;
+}
+
+.now-playing__status {
+  margin-bottom: 1em;
+}
+
+.now-playing__img {
+  float: left;
+  margin-right: 10px;
+  text-align: right;
+  width: 45%;
+}
+
+.now-playing__img img {
+  width: 100%;
+}
+
+.now-playing__side {
+  margin-left: 5%;
+  width: 45%;
+}
+
+/** Progress **/
+.progress {
+  /**border: solid rgba(29, 185, 84, 1.0); **/
+  background-color: rgba(64, 64, 64, 0.7);
+  border-radius: 50em;
+  //**padding: 0.2em;**//
+}
+
+.progress__bar {
+  border-radius: 0em;
+  background-color: rgba(29, 185, 84, 0.7);
+  border-radius: 50em;
+  height: 0.45em;
+}
+
+/** Background **/
+.background {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  filter: opacity(0.15);
+  position: absolute;
+}
+
+.main-wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  z-index: 1;
+}
+
+.container {
+  align-items: center;
+  background: none; /* fix fox fullscreen , where it shows a white box */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  flex: 1;
+}
