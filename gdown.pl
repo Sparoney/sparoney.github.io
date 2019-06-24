@@ -76,7 +76,7 @@ sub execute_command() {
     # check contents before download & if a $FILENAME has been indicated resume on content download
     # please, note that for this to work, wget must correctly provide --spider with --server-response (-S)
     if ( length($FILENAME) > 0 ) {
-        $COMMAND="wget -q --show-progress -P "/content/drive/Team Drives/Aaron's Unlimited Storage/Uploads" -S --no-check-certificate --spider --load-cookie $TEMP --save-cookie $TEMP \"$URL\" 2>&1";
+        $COMMAND="wget -q --show-progress -S --no-check-certificate --spider --load-cookie $TEMP --save-cookie $TEMP \"$URL\" 2>&1";
         my @HEADERS=`$COMMAND`;
         foreach my $header (@HEADERS) {
             if ( $header =~ /Content-Type: (.+)/ ) {
@@ -88,7 +88,7 @@ sub execute_command() {
         }
     }
 
-    $COMMAND="wget $CONTINUE -q --show-progress -P "/content/drive/Team Drives/Aaron's Unlimited Storage/Uploads" --progress=dot:giga --no-check-certificate --load-cookie $TEMP --save-cookie $TEMP \"$URL\"";
+    $COMMAND="wget $CONTINUE -q --show-progress --progress=dot:giga --no-check-certificate --load-cookie $TEMP --save-cookie $TEMP \"$URL\"";
     $COMMAND.=" -O \"$OUTPUT_FILENAME\"";
     my $OUTPUT = system( $COMMAND );
     if ( $OUTPUT == 2 ) { # do a clean exit with Ctrl+C
