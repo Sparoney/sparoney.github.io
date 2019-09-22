@@ -1,8 +1,12 @@
 Origin: Sparon's Repo
 Label: Sparon's Repo
 Suite: stable
-Version: 4.0
+Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm
 Components: main
-Description: Sparon's Repo
+Description: Sparon's Repo of basic tweaks
+
+SHA256:
+ 852ec77f4f332545e96ac791e686a801b37560549742c04d710ff74c16a5f328 694 Packages.bz2
+ 9fec4b4d0df0ad449dc4347cc6695f5fbe6033d1abcb00ceb5534a385aff6294 692 Packages.xz

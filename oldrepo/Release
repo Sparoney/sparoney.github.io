@@ -1,0 +1,8 @@
+Origin: Sparon's Repo
+Label: Sparon's Repo
+Suite: stable
+Version: 4.0
+Codename: ios
+Architectures: iphoneos-arm
+Components: main
+Description: Sparon's Repo
