@@ -5,3 +5,5 @@ This is based off the old Packix repo. This took me a long time to get right so 
 Cloning this is a big effort as you have to change everything manually whereas I have a script that does it for me :)
 
 Didn't think I'd need to do this, but I did unfortunately
+
+###### Also, not having a license on this repo means legally you are NOT allowed to take any code from this repo and then modify/redistribute.
