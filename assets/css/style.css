@@ -1,0 +1,66 @@
+@import url('http://fonts.cdnfonts.com/css/yokelvision');
+
+body {
+    background-image: url("https://i.ytimg.com/vi/EC6owEEIk8M/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Yokelvision";
+}
+
+/* Change the link color to #111 (black) on hover */
+#navbar li a:hover {
+    color: #b8b8b8;
+}
+
+#navbar {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    text-align: center;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Yokelvision";
+    text-align: center;
+  }
+
+h1 {
+    font-size: 120px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+}
