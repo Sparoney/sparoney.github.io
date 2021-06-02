@@ -1,1 +1,0 @@
-Spotify New UI Enabler is a tweak that enables Spotify's New UI for every song and other hidden features not released yet!
